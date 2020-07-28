@@ -1,1 +1,13 @@
 microservicecloud-provider-dept-8003/target
+microservicecloud-api/target
+microservicecloud-consumer-dept-8050/target
+microservicecloud-api/target
+microservicecloud-consumer-dept-8050/target
+microservicecloud-eureka-7001/target
+microservicecloud-eureka-7002/target
+microservicecloud-eureka-7003/target
+microservicecloud-provider-dept-8001/target
+microservicecloud-consumer-dept-feign-8060/src/main/.DS_Store
+.DS_Store
+microservicecloud-consumer-dept-feign-8060/target
+microservicecloud-provider-dept-8002/target
