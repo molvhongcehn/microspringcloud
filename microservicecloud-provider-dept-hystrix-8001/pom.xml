@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-provider-dept-8003</artifactId>
+    <artifactId>microservicecloud-provider-dept-hystrix-8001</artifactId>
 
     <dependencies>
         <dependency><!-- 引入自己定义的api通用包 -->
@@ -26,7 +26,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- actuator 监控信息完善 能被dashboard监控-->
+        <!--Hystrix熔断-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId> spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+        <!-- actuator 监控信息完善 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -73,19 +78,5 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
-    <!-- <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-            <resource>
-                <targetPath>${basedir}/target/classes/com/molv/springcloud/dao</targetPath>
-                <directory>src/main/java/com/molv/springcloud/dao</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-        </resources>
-    </build>-->
+
 </project>

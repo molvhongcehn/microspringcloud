@@ -1,7 +1,7 @@
 package com.molv.springcloud.controller;
 
 import com.molv.springcloud.entities.Dept;
-import com.molv.springcloud.service.DeptService;
+import com.molv.springcloud.service.DeptApiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -17,7 +17,7 @@ public class DeptController_Consumer {
     @Autowired
     private RestTemplate restTemplate;
     @Autowired
-    private DeptService deptService;
+    private DeptApiService deptService;
 
     @RequestMapping(value = "/consumer/dept/add")
     public boolean add(Dept dept) {//没有RequestBody，则浏览器直接consumer/dept/add?dname=test添加
@@ -30,6 +30,7 @@ public class DeptController_Consumer {
         //return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id, Dept.class);
         return deptService.get(id);
     }
+
 
     @RequestMapping(value = "/consumer/dept/list", method = RequestMethod.GET)
     public List<Dept> list() {
