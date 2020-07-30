@@ -1,4 +1,4 @@
-package com.molv.springcloud.controller;
+package com.molv.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

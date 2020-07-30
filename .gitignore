@@ -14,3 +14,7 @@ microservicecloud-provider-dept-8002/target
 microservicecloud-consumer-hystrix-dashboard/target
 microservicecloud-provider-dept-hystrix-8001/target
 microservicecloud-zuul-gateway-9527/target
+microservicecloud-config-client-3355/target
+microservicecloud-config-3344/target
+microservicecloud-config-eureka-7001/target
+microservicecloud-config-provider-dept-8001/target
